@@ -1,34 +1,44 @@
-# College Website Chatbot using Flask
+# AI-Powered College Website Chatbot using Flask and NLP
 
-A lightweight, KB-free, rule-based chatbot integrated into a college website using the Flask web framework.  
-The chatbot assists students and visitors by instantly answering common queries related to admissions, courses, fees, placements, hostels, scholarships, and contact details.
+An AI-powered chatbot integrated into a college website using the Flask web framework.  
+The chatbot leverages Natural Language Processing (NLP) techniques such as **TF-IDF vectorization** and **cosine similarity** to intelligently respond to student and visitor queries related to admissions, courses, fees, placements, hostels, scholarships, and contact details.
 
 ---
 
 ## 📌 Project Overview
 
-In today’s digital era, educational institutions require efficient systems to handle repetitive student inquiries. This project implements a **rule-based chatbot** that serves as a virtual assistant for a college website. The chatbot eliminates the need for manual query handling by providing instant, accurate, and predefined responses without relying on machine learning models or external knowledge bases.
+Educational institutions often receive repetitive queries from students and parents regarding admissions and campus facilities. This project addresses that challenge by implementing an **AI-powered chatbot** that provides instant and accurate responses.
 
-The application is simple, fast, and easy to deploy, making it ideal for small to medium educational institutions.
+Initially designed as a rule-based system, the chatbot was enhanced using **NLP-based semantic similarity**, allowing it to understand user intent even when queries are phrased differently. The system does not rely on external APIs or large language models, making it lightweight, cost-effective, and suitable for academic deployment.
 
 ---
 
 ## 🚀 Features
 
-- KB-free rule-based chatbot
+- AI-powered chatbot using NLP techniques
+- Semantic query matching using TF-IDF and cosine similarity
 - Integrated college website home page
 - Dedicated chatbot interface
 - RESTful API for chatbot communication
-- Static Q&A matching with keyword fallback
-- Session-based local logging of conversations
-- Admin endpoints to view logs and static questions
-- Beginner-friendly and lightweight architecture
+- Fallback handling for unmatched queries
+- Session-based local logging of user interactions
+- Admin endpoints to view logs and static Q&A
+- Lightweight, fast, and easy to deploy
+
+---
+
+## 🧠 AI & NLP Approach
+
+The chatbot uses **TF-IDF (Term Frequency–Inverse Document Frequency)** to convert both user queries and predefined questions into numerical feature vectors. **Cosine similarity** is then applied to measure semantic similarity between the vectors.
+
+The response corresponding to the highest similarity score above a defined threshold is selected and returned to the user. This approach enables intelligent query handling without requiring exact keyword matches, making the chatbot flexible and AI-driven.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Backend:** Python, Flask  
+- **AI / NLP:** TF-IDF, Cosine Similarity, Scikit-learn, NumPy  
 - **Frontend:** HTML, CSS, JavaScript  
 - **Data Storage:** JSON (static Q&A and logs)  
 - **Version Control:** Git & GitHub  
@@ -66,7 +76,7 @@ Copy code
 ```bash
 git clone https://github.com/Sidra2710/college-chatbot.git
 cd college-chatbot
-2️⃣ Create Virtual Environment (Optional but Recommended)
+2️⃣ Create Virtual Environment (Optional)
 bash
 Copy code
 python -m venv venv
@@ -79,44 +89,36 @@ pip install -r requirements.txt
 bash
 Copy code
 python app.py
-
 🌐 Application Routes
 Route	Description
 /	College website home page
 /chatbot	Chatbot user interface
 /chat	Chat API endpoint
 /admin/logs	View chatbot interaction logs
-/admin/static_qa	View static Q&A data
+/admin/static_qa	View static Q&A dataset
 
-🔁 Chatbot Working Flow
-User enters a query in the chatbot UI
+🔁 System Workflow
+User enters a query via the chatbot UI
 
 Query is sent to the /chat API
 
-Input is normalized and matched with static Q&A
+Input is vectorized using TF-IDF
 
-Keyword-based rules handle partial matches
+Cosine similarity is calculated against stored questions
 
-If no match is found, a fallback response is returned
+Best-matching response is selected
 
-All interactions are logged locally in JSON format
+If similarity is low, fallback logic is applied
 
-🔐 Admin Features
-View recent chat logs
-
-Monitor unanswered or fallback queries
-
-Review static question-answer pairs
-
-Improve responses based on user interaction history
+Interaction is logged locally for analysis
 
 📌 Use Cases
-College websites
+College and university websites
 
-Admission help desks
+Admission enquiry systems
 
-Academic institutions
+Student help desks
 
-Student information portals
+Academic and internship projects
 
-Internship / academic project demonstrations
+AI/NLP learning demonstrations
