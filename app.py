@@ -1,4 +1,7 @@
 # app.py  -- KB-free minimal chatbot backend + college website home
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 import os
 import time
@@ -82,6 +85,24 @@ STATIC_QA = {
     "computer lab": "Our computer labs are equipped with high-speed internet and latest systems."
 }
 
+# ---------- AI / NLP Model (TF-IDF + Cosine Similarity) ----------
+
+questions = list(STATIC_QA.keys())
+answers = list(STATIC_QA.values())
+
+vectorizer = TfidfVectorizer()
+X = vectorizer.fit_transform(questions)
+
+def get_ai_reply(user_input):
+    user_vec = vectorizer.transform([user_input])
+    similarities = cosine_similarity(user_vec, X)[0]
+    best_idx = np.argmax(similarities)
+    best_score = similarities[best_idx]
+
+    if best_score > 0.35:   # threshold
+        return answers[best_idx], float(best_score)
+    else:
+        return None, 0.0
 
 # ---------- Local logging helpers ----------
 def append_log(entry):
@@ -132,14 +153,29 @@ def chat():
     score = 1.0
 
     # exact match on lowercased keys
-    if low in STATIC_QA:
-        reply = STATIC_QA[low]
-    else:
-        # simple substring / fuzzy match
-        for k, v in STATIC_QA.items():
-            if k in low or low in k:
-                reply = v
-                break
+    # 1) AI-based semantic matching
+    reply, score = get_ai_reply(low)
+    source = 'ai'
+
+# 2) If AI fails, fallback to rule-based logic
+    if not reply:
+        source = 'rule'
+        score = 0.6
+
+        if any(w in low for w in ['admission', 'admissions', 'deadline', 'apply']):
+            reply = "Admissions deadlines vary by program; please check the admissions page or email admissions@college.edu."
+
+        elif any(w in low for w in ['contact', 'phone', 'call', 'email']):
+            reply = "You can contact admin at admin@college.edu or call +1-555-1234."
+
+        elif any(w in low for w in ['website', 'link', 'url']):
+            reply = "You can visit our college website at http://127.0.0.1:5000/."
+
+        else:
+            reply = FALLBACK_REPLY
+            source = 'fallback'
+            score = 0.0
+
 
     if not reply:
         # 2) simple keyword rules (very small)
@@ -206,3 +242,4 @@ def list_static_qa():
 if __name__ == '__main__':
     print("Starting KB-free chatbot. Logs:", LOGS_PATH)
     app.run(host='0.0.0.0', port=5000, debug=True)
+
