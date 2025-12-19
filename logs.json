@@ -1,0 +1,282 @@
+[
+  {
+    "session": "127.0.0.1",
+    "query": "When is admission deadline?",
+    "reply": "Admissions close on July 31 every year.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764171630.013321
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "when is the last for submission of admission?",
+    "reply": "Admissions deadlines vary by program; please check the admissions page or email admissions@college.edu.",
+    "source": "rule",
+    "score": 0.6,
+    "ts": 1764173553.2414129
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Hi",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764173585.0528023
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "what are the courses that you are offering?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764173621.4431934
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "when is the last day for submission?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764173640.9971192
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "\"when is admission deadline?",
+    "reply": "Admissions close on July 31 every year.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174228.3608327
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "what are the courses that you are offering?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764174255.4266322
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "when is the last day for submission?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764174278.152866
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "what is the admission deadline",
+    "reply": "Admissions close on July 31 every year.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174314.2984822
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "where is the campus located?",
+    "reply": "Our campus is located at 123 College Rd, YourCity.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174347.1269045
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "what are the courses that you are offering?",
+    "reply": "We offer B.Tech in CSE, ECE, ME, Civil, and AI&DS, plus MBA and MCA programmes.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174455.0791388
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "hi",
+    "reply": "Hello, Iam Mora how can i help you?",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174744.5126514
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "where is the campus located?",
+    "reply": "Our campus is located at 123 College Rd, YourCity.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174760.7137656
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Hi.",
+    "reply": "Hello, Iam Mora how can i help you?",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174778.1780639
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Where is campus located?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764174911.4476967
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Hi",
+    "reply": "Hello, Iam Sidra how can i help you?",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764174945.5286524
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "V is campus located.",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764175025.3356721
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Where is the campus?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764175033.0326617
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "V is campus located.",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764175040.505824
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Hi.",
+    "reply": "Hello, Iam Sidra how can i help you?",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764175047.660274
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Where is campus located?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764175093.0230331
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Where is the campus located?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764176103.7625258
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Where is B.",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764176128.5397549
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Where is campus located?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764176134.470758
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "Hi.",
+    "reply": "Hello, Iam Sidra how can i help you?",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764176144.4668617
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "hello",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764176839.7370076
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "provide the college website",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764176850.4392307
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "How to contact admissions",
+    "reply": "Email admissions@college.edu or call +1-555-1234.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764176937.1033795
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "provide the college website",
+    "reply": "You can visit our college website at http://127.0.0.1:5000/.",
+    "source": "rule",
+    "score": 0.9,
+    "ts": 1764177698.0020874
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "what is the admission deadline",
+    "reply": "Admissions close on July 31 every year.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764177826.6647272
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "HI",
+    "reply": "Hello, I am Sidra. How can I help you?",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764177831.1129186
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "how to contact admissions",
+    "reply": "Email admissions@college.edu or call +1-555-1234.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764177856.6538641
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "When is?",
+    "reply": "Sorry, I couldn't find an answer. Would you like me to forward this to an admin?",
+    "source": "fallback",
+    "score": 0.0,
+    "ts": 1764179704.522572
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "When is the admission deadline?",
+    "reply": "Admissions deadlines vary by program; please check the admissions page or email admissions@college.edu.",
+    "source": "rule",
+    "score": 0.6,
+    "ts": 1764179711.1343312
+  },
+  {
+    "session": "127.0.0.1",
+    "query": "library",
+    "reply": "Our digital library is equipped with over 50,000 books and online journals.",
+    "source": "static",
+    "score": 1.0,
+    "ts": 1764180023.9781501
+  }
+]
